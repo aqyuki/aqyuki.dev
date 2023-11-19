@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .content-center {
+    @apply flex flex-col justify-center items-center;
+  }
+
+  .title {
+    @apply flex flex-col justify-center items-center w-screen text-4xl font-thin mx-2;
+  }
+
+  .article-width {
+    @apply w-[350px];
+  }
+
+  .article-title {
+    @apply article-width flex flex-col justify-center items-center text-3xl font-thin mx-2;
+  }
+
+  .article-content {
+    @apply article-width text-base;
+  }
+
+  .article-grid {
+    @apply article-width grid grid-cols-3;
+  }
+
+  .link-list {
+    @apply text-lg mx-1;
+  }
+}

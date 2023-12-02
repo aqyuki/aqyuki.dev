@@ -3,31 +3,60 @@
 @tailwind utilities;
 
 @layer components {
-  .content-center {
-    @apply flex flex-col justify-center items-center;
+  .root-container {
+    /* grid */
+    @apply grid;
+    @apply grid-flow-row;
+    @apply justify-center;
+    @apply items-center;
+
+    /* cols setting */
+    @apply sm:grid-cols-3;
+    @apply md:grid-cols-5;
+    @apply xl:grid-cols-8;
   }
 
-  .title {
-    @apply flex flex-col justify-center items-center w-screen text-4xl font-thin mx-2;
+  .content-container {
+    /* grid */
+    @apply sm:col-start-2;
+    @apply md:col-start-3;
+    @apply xl:col-start-4;
+    @apply xl:col-end-6;
+
+    /* margin */
+    @apply my-4;
   }
 
-  .article-width {
+  .w-body {
     @apply w-[350px];
   }
 
-  .article-title {
-    @apply article-width flex flex-col justify-center items-center text-3xl font-thin mx-2;
+  .link-box {
+    /* grid */
+    @apply grid;
+    @apply grid-cols-3;
+
+    /* text place */
+    @apply text-center;
+  }
+}
+
+@layer utilities {
+  .page-title {
+    /* font */
+    @apply font-thin;
+    @apply text-4xl;
+
+    /* placement */
+    @apply text-center;
   }
 
-  .article-content {
-    @apply article-width text-base;
-  }
+  .content-title {
+    /* font */
+    @apply font-thin;
+    @apply text-3xl;
 
-  .article-grid {
-    @apply article-width grid grid-cols-3;
-  }
-
-  .link-list {
-    @apply text-lg mx-1;
+    /* margin */
+    @apply my-1;
   }
 }

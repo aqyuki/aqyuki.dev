@@ -1,14 +1,36 @@
 import Image from "next/image";
+import RootContainer from "@/components/root_container";
+import ContentContainer from "@/components/content_container";
+import ContentTitle from "@/components/content_title";
+import ContentText from "@/components/content_text";
+import { LinkListProps, LinkList } from "./components";
+
+const LinkListItems: LinkListProps = {
+  links: [
+    {
+      display: "X",
+      href: "https://twitter.com/aqyuki21s",
+    },
+    {
+      display: "GitHub",
+      href: "https://github.com/aqyuki",
+    },
+    {
+      display: "Zenn",
+      href: "https://zenn.dev/aqyuki",
+    },
+  ],
+};
 
 export default function Home() {
   return (
     <main className="w-screen">
-      <div className="root-container">
-        <div className="content-container mx-auto">
+      <RootContainer>
+        <ContentContainer className="mx-auto">
           <h1 className="page-title">Yuki Room</h1>
-        </div>
+        </ContentContainer>
 
-        <div className="content-container mx-auto">
+        <ContentContainer className="mx-auto">
           <Image
             src={"/image/sns/profile.png"}
             alt="Profile Image"
@@ -16,47 +38,38 @@ export default function Home() {
             height={350}
             className="rounded-lg"
           />
-        </div>
+        </ContentContainer>
 
-        <div className="content-container mx-auto">
-          <h2 className="content-title text-center">Profile</h2>
-
-          <p className="w-body">
-            鹿児島高専の学生をしています。成人済み。 <br />
+        <ContentContainer className="mx-auto">
+          <ContentTitle>Profile</ContentTitle>
+          <ContentText> 鹿児島高専の学生をしています。成人済み。</ContentText>
+          <ContentText>
             ホロライブが好きで、配信をよく見ています。将来はCoverでHoloALTに関わりたいと思ってる。
-            <br />
-            メタバースとかVRとVTuberの融合を目指してる。 <br />
+          </ContentText>
+          <ContentText>
+            メタバースとかVRとVTuberの融合を目指してる。{" "}
+          </ContentText>
+          <ContentText>
             専門はバックエンド・フロントエンドも少しできます。
-          </p>
-        </div>
+          </ContentText>
+        </ContentContainer>
 
-        <div className="content-container mx-auto">
-          <h2 className="content-title text-center">Skills</h2>
-
-          <p className="w-body">
+        <ContentContainer className="mx-auto">
+          <ContentTitle>Skills</ContentTitle>
+          <ContentText>
             GoとTypeScriptをメインにCLIツールやWebページ・APIサーバーを作っています。Goが一番のお気に入り。
-            <br />
+          </ContentText>
+          <ContentText>
             アーキテクチャや設計も勉強中です。簡単なCIなら組めます。
-            <br />
-            Git/GitHub・GitHubActionも使えます。
-          </p>
-        </div>
+          </ContentText>
+          <ContentText>Git/GitHub・GitHubActionも使えます。</ContentText>
+        </ContentContainer>
 
-        <div className="content-container">
-          <h2 className="content-title text-center">Links</h2>
-          <div className="link-box">
-            <div>
-              <a href="https://twitter.com/aqyuki21s">X</a>
-            </div>
-            <div>
-              <a href="https://github.com/aqyuki">GitHub</a>
-            </div>
-            <div>
-              <a href="https://zenn.dev/aqyuki">Zenn</a>
-            </div>
-          </div>
-        </div>
-      </div>
+        <ContentContainer>
+          <ContentTitle>Links</ContentTitle>
+          <LinkList links={LinkListItems.links} />
+        </ContentContainer>
+      </RootContainer>
     </main>
   );
 }

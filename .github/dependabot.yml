@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: /
+    schedule:
+      interval: "daily"
+    groups:
+      next:
+        patterns:
+          - "next"
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+          - "@types/next"
+          - "eslint-plugin-react"
+      dependencies:
+        dependency-type: production
+      development:
+        dependency-type: development

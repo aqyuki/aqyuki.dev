@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo } from 'react';
 
 export type LinkListProps = {
   links: {
@@ -21,5 +21,5 @@ const LinkList = memo(({ links }: LinkListProps) => {
   );
 });
 
-LinkList.displayName = "LinkList";
+LinkList.displayName = 'LinkList';
 export { LinkList };

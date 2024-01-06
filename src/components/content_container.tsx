@@ -6,7 +6,7 @@ export default function ContentContainer({
   className?: string;
 }) {
   const class_name: string =
-    "content-container " + (className ? className : "");
+    'content-container ' + (className ? className : '');
   if (children) {
     return <div className={class_name}>{children}</div>;
   }

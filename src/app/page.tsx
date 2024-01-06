@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import RootContainer from '@/components/root_container'
-import ContentContainer from '@/components/content_container'
-import ContentTitle from '@/components/content_title'
-import ContentText from '@/components/content_text'
-import { LinkListProps, LinkList } from './components'
+import Image from 'next/image';
+import RootContainer from '@/components/root_container';
+import ContentContainer from '@/components/content_container';
+import ContentTitle from '@/components/content_title';
+import ContentText from '@/components/content_text';
+import { LinkListProps, LinkList } from './components';
 
 const LinkListItems: LinkListProps = {
   links: [
@@ -20,27 +20,27 @@ const LinkListItems: LinkListProps = {
       href: 'https://zenn.dev/aqyuki',
     },
   ],
-}
+};
 
 export default function Home() {
   return (
-    <main className='w-screen'>
+    <main className="w-screen">
       <RootContainer>
-        <ContentContainer className='mx-auto'>
-          <h1 className='page-title'>Yuki Room</h1>
+        <ContentContainer className="mx-auto">
+          <h1 className="page-title">Yuki Room</h1>
         </ContentContainer>
 
-        <ContentContainer className='mx-auto'>
+        <ContentContainer className="mx-auto">
           <Image
             src={'/image/sns/profile.png'}
-            alt='Profile Image'
+            alt="Profile Image"
             width={350}
             height={350}
-            className='rounded-lg'
+            className="rounded-lg"
           />
         </ContentContainer>
 
-        <ContentContainer className='mx-auto'>
+        <ContentContainer className="mx-auto">
           <ContentTitle>Profile</ContentTitle>
           <ContentText> 鹿児島高専の学生をしています。成人済み。</ContentText>
           <ContentText>
@@ -54,7 +54,7 @@ export default function Home() {
           </ContentText>
         </ContentContainer>
 
-        <ContentContainer className='mx-auto'>
+        <ContentContainer className="mx-auto">
           <ContentTitle>Skills</ContentTitle>
           <ContentText>
             GoとTypeScriptをメインにCLIツールやWebページ・APIサーバーを作っています。Goが一番のお気に入り。
@@ -71,5 +71,5 @@ export default function Home() {
         </ContentContainer>
       </RootContainer>
     </main>
-  )
+  );
 }

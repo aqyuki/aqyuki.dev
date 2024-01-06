@@ -1,10 +1,10 @@
 export default function ContentText({
   children,
 }: {
-  children?: React.ReactNode
+  children?: React.ReactNode;
 }) {
   if (children) {
-    return <p className='w-body'>{children}</p>
+    return <p className="w-body">{children}</p>;
   }
-  return <></>
+  return <></>;
 }

@@ -5,8 +5,9 @@ export default function ContentContainer({
   children?: React.ReactNode;
   className?: string;
 }) {
-  const class_name: string =
-    'content-container ' + (className ? className : '');
+  const class_name: string = `content-container ${
+    className ? className : ''
+  }`.trim();
   if (children) {
     return <div className={class_name}>{children}</div>;
   }

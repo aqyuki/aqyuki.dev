@@ -8,10 +8,10 @@
     "start": "next start",
     "lint:next": "next lint",
     "lint:check": "biome lint ./src",
-    "lint:fix": "biome lint --apply ./src ",
+    "lint:fix": "biome lint --apply ./src",
     "fmt:check": "biome format ./src",
-    "fmt:fix": "biome format --write ./src ",
-    "pre-commit": "biome lint ./src && biome format --write ./src"
+    "fmt:fix": "biome format --write ./src",
+    "pre-commit": "bun run fmt:fix && bun run lint:check"
   },
   "lint-staged": {
     "src/**/*.{tsx,ts}": "bun run pre-commit"

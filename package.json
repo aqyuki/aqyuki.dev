@@ -6,11 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prepare":"husky install",
     "lint:next": "next lint",
     "lint:check": "biome lint ./src",
-    "lint:fix": "biome lint --apply ./src ",
+    "lint:fix": "biome lint --apply ./src",
     "fmt:check": "biome format ./src",
-    "fmt:fix": "biome format --write ./src "
+    "fmt:fix": "biome format --write ./src",
+    "pre-commit": "bun run fmt:fix && bun run lint:check"
+  },
+  "lint-staged": {
+    "src/**/*.{tsx,ts}": "bun run pre-commit"
   },
   "dependencies": {
     "react": "^18",
@@ -23,6 +28,8 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.0",
     "typescript": "^5"

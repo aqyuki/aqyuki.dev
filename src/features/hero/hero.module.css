@@ -14,10 +14,17 @@
 }
 
 .hero_card img {
+  margin: 10px;
   border-radius: 50%;
 }
 
-.hero_card p {
+.hero_card h1 {
   margin: 10px auto;
   font-size: 2rem;
+}
+
+.hero_card a {
+  text-decoration: none;
+  margin: 10px auto;
+  font-size: 1.7rem;
 }

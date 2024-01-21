@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import style from './hero.module.css';
 import Links from './Links';
+import Link from 'next/link';
 import { jost } from '@/utils/fonts/fonts';
 
 export default function Hero() {
@@ -14,12 +15,12 @@ export default function Hero() {
           height={250}
         />
         <h1 className={jost.className}>Student Developer / uwaaa</h1>
-        <a href="profile" className={jost.className}>
+        <Link href="/profile" className={jost.className}>
           Profile
-        </a>
-        <a href="works" className={jost.className}>
+        </Link>
+        <Link href="/works" className={jost.className}>
           Works
-        </a>
+        </Link>
         <Links />
       </div>
     </div>

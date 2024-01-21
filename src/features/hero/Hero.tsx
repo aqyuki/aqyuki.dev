@@ -13,7 +13,7 @@ export default function Hero() {
           width={250}
           height={250}
         />
-        <h1 className={jost.className}>Student Developer</h1>
+        <h1 className={jost.className}>Student Developer / uwaaa</h1>
         <a href="profile" className={jost.className}>
           Profile
         </a>

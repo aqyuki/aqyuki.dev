@@ -1,10 +1,4 @@
-import type { Metadata } from 'next';
 import './globals.css';
-
-export const metadata: Metadata = {
-  title: 'Yuki Room',
-  description: "Yuki's web page",
-};
 
 export default function RootLayout({
   children,
@@ -13,6 +7,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <title>uwaaa - Student Developer</title>
+      <meta
+        name="description"
+        content="学生プログラマーのポートフォリオサイトです。プロフィールや作成したものなどを掲載しています。"
+      />
       <body>{children}</body>
     </html>
   );

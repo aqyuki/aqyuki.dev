@@ -1,5 +1,5 @@
 import style from './hero.module.css';
-import Links from './Links';
+import Links from '@/features/links/Links';
 import Avatar from '@/features/avatar/Avatar';
 import Link from 'next/link';
 import { jost } from '@/utils/fonts/fonts';

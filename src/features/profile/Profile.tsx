@@ -1,6 +1,7 @@
 import style from './profile.module.css';
 import { jost } from '@/utils/fonts/fonts';
 import Avatar from '@/features/avatar/Avatar';
+import Skills from '@/features/skills/Skills';
 import Links from '../links/Links';
 
 export default function Profile() {
@@ -33,7 +34,7 @@ export default function Profile() {
 
         <div className={style.profile_card}>
           <h1 className={jost.className}>Skills</h1>
-          {/* 言語やツールのアイコンのSVGを並べたい */}
+          <Skills />
         </div>
 
         <div className={style.profile_card}>

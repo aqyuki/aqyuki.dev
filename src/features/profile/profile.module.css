@@ -47,6 +47,19 @@
   margin: 5px auto;
 }
 
+.profile_card a {
+  text-decoration: none;
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 1.7rem;
+  border-radius: 1rem;
+}
+
 .profile_card span {
   display: inline-block;
+}
+
+.profile_links {
+  display: grid;
+  margin: 10px auto;
 }

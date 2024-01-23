@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import style from './avatar.module.css';
 
-export function Avatar() {
+export default function Avatar() {
   return (
     <Image
       src="/profile.png"

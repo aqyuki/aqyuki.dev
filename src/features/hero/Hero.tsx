@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import style from './hero.module.css';
 import Links from './Links';
+import { Avatar } from '@/features/avatar/Avatar';
 import Link from 'next/link';
 import { jost } from '@/utils/fonts/fonts';
 
@@ -8,12 +8,7 @@ export default function Hero() {
   return (
     <div className={style.hero_wrapper}>
       <div className={style.hero_card}>
-        <Image
-          src="/profile.png"
-          alt="profile image"
-          width={250}
-          height={250}
-        />
+        <Avatar />
         <h1 className={jost.className}>Student Developer / uwaaa</h1>
         <Link href="/about" className={jost.className}>
           Profile

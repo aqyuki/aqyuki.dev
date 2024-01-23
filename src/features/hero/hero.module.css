@@ -12,11 +12,6 @@
   justify-items: center;
 }
 
-.hero_card img {
-  margin: 10px;
-  border-radius: 50%;
-}
-
 .hero_card h1 {
   margin: 10px auto;
   font-size: 2rem;

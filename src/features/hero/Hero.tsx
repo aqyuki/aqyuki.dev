@@ -15,7 +15,7 @@ export default function Hero() {
           height={250}
         />
         <h1 className={jost.className}>Student Developer / uwaaa</h1>
-        <Link href="/profile" className={jost.className}>
+        <Link href="/about" className={jost.className}>
           Profile
         </Link>
         <Link href="/works" className={jost.className}>

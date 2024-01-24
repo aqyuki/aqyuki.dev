@@ -44,9 +44,9 @@ export default function Profile() {
             <Link href="/" className={jost.className}>
               Top
             </Link>
-            <Link href="/works" className={jost.className}>
+            {/* <Link href="/works" className={jost.className}>
               Works
-            </Link>
+            </Link> */}
           </div>
           <Links />
         </div>

@@ -13,9 +13,9 @@ export default function Hero() {
         <Link href="/about" className={jost.className}>
           Profile
         </Link>
-        <Link href="/works" className={jost.className}>
+        {/* <Link href="/works" className={jost.className}>
           Works
-        </Link>
+        </Link> */}
         <Links />
       </div>
     </div>

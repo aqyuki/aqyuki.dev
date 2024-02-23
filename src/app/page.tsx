@@ -1,9 +1,9 @@
-import Hero from '@/features/hero/Hero';
+import Profile from '@/features/profile/Profile';
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <Profile />
     </main>
   );
 }

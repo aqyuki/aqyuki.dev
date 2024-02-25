@@ -3,7 +3,6 @@ import { jost } from '@/utils/fonts/fonts';
 import Avatar from '@/features/avatar/Avatar';
 import Skills from '@/features/skills/Skills';
 import Links from '../links/Links';
-import Link from 'next/link';
 
 export default function Profile() {
   return (

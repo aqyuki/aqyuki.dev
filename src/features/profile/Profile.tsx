@@ -40,14 +40,6 @@ export default function Profile() {
 
         <div className={style.profile_card}>
           <h1 className={jost.className}>Links</h1>
-          <div className={style.profile_links}>
-            <Link href="/" className={jost.className}>
-              Top
-            </Link>
-            {/* <Link href="/works" className={jost.className}>
-              Works
-            </Link> */}
-          </div>
           <Links />
         </div>
       </div>

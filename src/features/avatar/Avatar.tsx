@@ -9,6 +9,7 @@ export default function Avatar() {
       width={250}
       height={250}
       className={style.avatar_image}
+      priority
     />
   );
 }

@@ -2,7 +2,7 @@ pre-commit:
   commands:
     format:
       glob: '*.{ts,tsx}'
-      run: 'bun run format:check'
+      run: 'pnpm run format:check'
     lint:
       glob: '*.{ts,tsx}'
-      run: 'bun run lint:check'
+      run: 'pnpm run lint:check'

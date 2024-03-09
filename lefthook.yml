@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    format:
+      glob: '*.{ts,tsx}'
+      run: 'bun run format:check'
+    lint:
+      glob: '*.{ts,tsx}'
+      run: 'bun run lint:check'

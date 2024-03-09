@@ -1,9 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
-  "packageRules": [
+  "customManagers": [
     {
-      "packagePatterns": ["^\\[tools\\]\nnode = \"([^\"]+)\"$"]
+      "customType": "regex",
+      "fileMatch": ["^.mise.toml$"],
+      "matchStrings": ["<depName> = \"<currentValue>\""],
+      "depNameTemplate": ".*",
+      "datasourceTemplate": "asdf"
     }
   ]
 }

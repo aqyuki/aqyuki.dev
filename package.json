@@ -6,13 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prepare": "husky install",
     "lint:next": "next lint",
-    "lint:check": "biome lint ./src",
-    "lint:fix": "biome lint --apply ./src",
-    "fmt:check": "biome format ./src",
-    "fmt:fix": "biome format --write ./src",
-    "pre-commit": "bun run fmt:fix && bun run lint:check"
+    "lint:check": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format:check": "prettier --check ./src",
+    "format:fix": "prettier --write ./src"
   },
   "lint-staged": {
     "src/**/*.{tsx,ts}": "bun run pre-commit"
@@ -28,11 +26,18 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "husky": "^8.0.3",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.1.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-unused-imports": "^3.1.0",
+    "lefthook": "^1.6.5",
     "lint-staged": "^15.2.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.0",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "pnpm@8.15.4"
 }

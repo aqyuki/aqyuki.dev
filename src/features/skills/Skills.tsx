@@ -1,9 +1,10 @@
-import { FaGolang, FaGitAlt, FaGithub, FaDocker } from 'react-icons/fa6';
-import { SiTypescript } from 'react-icons/si';
-import style from './skills.module.css';
+import { FaGolang, FaGitAlt, FaGithub, FaDocker } from 'react-icons/fa6'
+import { SiTypescript } from 'react-icons/si'
+
+import style from './skills.module.css'
 
 export default function Skills() {
-  const size = 40;
+  const size = 40
 
   return (
     <div className={style.skill_wrapper}>
@@ -13,5 +14,5 @@ export default function Skills() {
       <FaGithub size={size} />
       <FaDocker size={size} />
     </div>
-  );
+  )
 }

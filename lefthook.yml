@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    format:
+      glob: '*.{ts,tsx}'
+      run: 'pnpm run format:check'
+    lint:
+      glob: '*.{ts,tsx}'
+      run: 'pnpm run lint:check'
